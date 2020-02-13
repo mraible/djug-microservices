@@ -1,0 +1,17 @@
+{
+  "generator-jhipster": {
+    "appsFolders": ["blog", "gateway", "store"],
+    "directoryPath": "../",
+    "clusteredDbApps": [],
+    "serviceDiscoveryType": "eureka",
+    "jwtSecretKey": "ZDgwNTQ0OTVmY2U5NGJkMGJmZmRjOGE4MDJkM2Y3Mzc2MmIyZTI3MzRmMzg1ODQ1OTAxOTIyOTk4YmQxODJiMzM1MjhiNmUwZDcyOTdmNTdmNjE5NDU1OTY4MGZjMTQ0MTkyNg==",
+    "dockerRepositoryName": "gcr.io/wise-coyote-827",
+    "dockerPushCommand": "docker push",
+    "kubernetesNamespace": "default",
+    "kubernetesUseDynamicStorage": true,
+    "kubernetesStorageClassName": "",
+    "ingressDomain": "35.193.119.22.nip.io",
+    "monitoring": "elk",
+    "istio": true
+  }
+}
