@@ -48,6 +48,7 @@ export const BlogUpdate = (props: IBlogUpdateProps) => {
         ...blogEntity,
         ...values
       };
+      entity.user = users[values.user];
 
       if (isNew) {
         props.createEntity(entity);
@@ -112,11 +113,11 @@ export const BlogUpdate = (props: IBlogUpdateProps) => {
                 <Label for="blog-user">
                   <Translate contentKey="gatewayApp.blogBlog.user">User</Translate>
                 </Label>
-                <AvInput id="blog-user" type="select" className="form-control" name="user.id">
+                <AvInput id="blog-user" type="select" className="form-control" name="user">
                   <option value="" key="0" />
                   {users
-                    ? users.map(otherEntity => (
-                        <option value={otherEntity.id} key={otherEntity.id}>
+                    ? users.map((otherEntity, index) => (
+                        <option value={index} key={otherEntity.id}>
                           {otherEntity.login}
                         </option>
                       ))
